@@ -37,3 +37,11 @@ Copie todos os arquivos e pastas deste pacote para a pasta clonada do repositór
 - Quatro esquemas de mecanismos moleculares (RAS, BCR::ABL1, MMR e BCL2).
 - Slides originais mantidos nos arquivos do pacote para rastreabilidade, mas não são apresentados no Atlas.
 - A identificação diagnóstica das imagens é orientativa e não substitui confirmação por patologista.
+
+
+## Atualização v1.1 — aprofundamento simultâneo das 13 apostilas
+Foram acrescentadas quatro seções explicativas específicas em cada módulo, além de um roteiro de páginas dos PDFs de origem. Os textos são sínteses didáticas adicionais; não são transcrições do Robbins nem revisão integral das fontes. A quantidade de páginas impressas varia com dispositivo, escala e navegador; a meta de 5–7 páginas por aula não foi validada em impressão. O atlas e o simulador de DO foram preservados.
+
+
+## v1.2 — Declaração de Óbito integral (treinamento)
+Formulário didático com blocos I–IX, casos fictícios, correção das causas e conferência de identificação/ocorrência. NÃO é documento oficial, não tem validade legal e não substitui DO real.

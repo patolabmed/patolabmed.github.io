@@ -42,3 +42,13 @@ input,textarea,select{background:#281c3b!important;border:1px solid #6a507d!impo
 
 /* PatoLab v1.0: atlas didático curado */
 .atlas-lead{max-width:850px;font-size:1.08rem;line-height:1.75}.atlas-entry{display:grid;grid-template-columns:minmax(260px,42%) 1fr;gap:26px;margin:24px 0 36px;padding:20px;border:1px solid var(--line);border-radius:20px;background:var(--surface)}.atlas-visual{display:flex;flex-direction:column;align-items:center;gap:12px}.atlas-visual img{width:100%;height:auto;max-height:480px;object-fit:contain;background:#fff;border-radius:12px}.atlas-explain h2{margin:8px 0 16px}.atlas-explain h3{font-size:1rem;margin:16px 0 5px;color:var(--text)}.atlas-explain p{line-height:1.65}.atlas-schemes{display:grid;gap:18px}.atlas-diagram{padding:22px;border-radius:18px;border:1px solid var(--line);background:var(--surface)}.diagram-line{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:18px 0}.diagram-line span{padding:12px 15px;background:#34204c;color:#fff4b9;border:1px solid #a57fce;border-radius:12px;text-align:center;font-weight:650}.diagram-line b{color:#e4ba36;font-size:1.3rem}.atlas-diagram p{line-height:1.7}@media(max-width:760px){.atlas-entry{grid-template-columns:1fr;padding:14px}.diagram-line{gap:6px}.diagram-line span{font-size:.83rem;padding:8px}}
+
+/* v1.1: apostilas com aprofundamento e impressão */
+.reader-section.advanced{margin-top:2.4rem}.reader-section.advanced p{line-height:1.85;font-size:1.055rem}.reader-section.advanced h2{margin-bottom:1rem}.reader-section{break-inside:auto}@media print{.reader-section.advanced{break-inside:auto}.reader-section.advanced h2{break-after:avoid} .reader-callout{break-inside:avoid}}
+/* Atlas: preservar proporção, fundo neutro e leitura em telas pequenas */
+.atlas-entry{grid-template-columns:minmax(0,48%) minmax(0,1fr);align-items:start;gap:clamp(18px,3vw,34px)}
+.atlas-image-frame{width:100%;min-height:260px;max-height:650px;background:#f5f2ef;border:1px solid #d8d2d0;border-radius:14px;display:flex;align-items:center;justify-content:center;overflow:hidden;padding:10px}
+.atlas-image-frame img{display:block;width:auto;max-width:100%;height:auto;max-height:620px;object-fit:contain;border-radius:4px;background:#fff}
+.atlas-image-caption{font-size:.78rem;line-height:1.45;color:var(--muted);text-align:center}
+.atlas-explain{min-width:0}.atlas-explain p{overflow-wrap:anywhere}
+@media(max-width:900px){.atlas-entry{grid-template-columns:1fr}.atlas-image-frame{min-height:180px;max-height:none}.atlas-image-frame img{max-height:520px}}
