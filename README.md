@@ -1,23 +1,39 @@
-# PatologiaMed — versão 0.2 aprofundada
+# PatoLab 0.8 — Apostilas + Simulador de Declaração de Óbito
 
-Plataforma estática HTML/CSS/JavaScript para GitHub Pages. Publique o conteúdo da pasta `patologia-med` na raiz de um repositório. Em Settings → Pages, escolha Deploy from a branch → main → root. Para testar localmente: `python -m http.server 8000` e abra http://localhost:8000.
+Plataforma estática para GitHub Pages (organização patolabmed, repositório patolabmed.github.io). Abra `index.html` em um servidor local ou publique os arquivos na raiz do repositório.
 
-## Incluído
-- 13 módulos, 49 seções de aprofundamento com explicações fisiopatológicas, sínteses, fluxo e três modos de leitura;
-- 199 páginas visuais dos 5 PDFs preservadas em WebP e exibidas no atlas; associação temática de múltiplos módulos;
-- 39 flashcards, 26 questões objetivas revisadas e 13 questões dissertativas com espelhos;
-- simulados objetivos, anotações, dashboard, modo escuro, plano inicial, exportação/importação JSON;
-- compatibilidade com os identificadores e a chave `patomed-v1` de progresso da versão anterior.
+## Mudanças
+- 13 aulas com estrutura de apostila e 39 seções autorais de mecanismos e revisão, em modo de leitura escuro inspirado no FisioLab.
+- Diagramas de mecanismos integrados ao texto, tabelas e caixas de conceito-chave e pegadinhas.
+- Seis recortes de lâminas e imunohistoquímica da aula prática, integrados nos módulos de Burkitt, linfoma folicular e morfologia; os demais módulos usam esquemas autorais, não imagens histológicas inventadas.
+- Acervo original de 193 slides preservado em seção recolhida.
+- 10 casos interativos de Declaração de Óbito (arquivo declaracao-obito.html) com correção aproximada.
+- Flashcards ampliados: 119 anteriores + 39 novos, separados por módulo.
 
-## Transparência
-As 199 páginas estão preservadas, **não** são 199 figuras individualmente extraídas, legendadas e auditadas. A associação por palavras-chave é automática e pode conter falsos positivos e omissões. O texto aprofundado é complementar à disciplina, mas ainda não foi integralmente cotejado slide a slide nem validado por especialista. A prova anterior foi preservada visualmente, não convertida integralmente em questões. Ainda faltam correção semântica de dissertativas, repetição espaçada programada, comparação lado a lado/pan e pesos e temporização configuráveis dos simulados. Flashcards ainda registram avaliação sem agenda de revisão. Não publicar os slides em repositório público sem permissão dos titulares.
+## Transparência e limitações
+Os textos foram elaborados com apoio nos slides da disciplina e em conceitos gerais de patologia; não foi fornecido exemplar do Robbins & Cotran para cotejo literal. Portanto não alegamos verificação página a página no livro. A apostila é material didático complementar, não reprodução do Robbins. Algumas figuras de aula contêm imagens de terceiros e precisam de autorização antes de publicação pública. A correção de DO é baseada em termos e não substitui avaliação docente. Revise as informações com a professora e as fontes oficiais antes de uso profissional.
 
-## Referências
-Robbins & Cotran, *Bases Patológicas das Doenças* (edição adotada na disciplina); National Cancer Institute (https://www.cancer.gov); NCBI Bookshelf (https://www.ncbi.nlm.nih.gov/books/); OMS (https://www.who.int). As referências são gerais, sem atribuição de páginas não verificadas. Para decisões clínicas, consultar diretrizes atualizadas.
-
-## Backup
-O progresso é salvo localmente no navegador; não sincroniza entre aparelhos. Exporte backup antes de limpar dados ou trocar de dispositivo. Atualizações de conteúdo devem manter IDs existentes.
+## Publicação
+Copie todos os arquivos e pastas deste pacote para a pasta clonada do repositório, substituindo os arquivos homônimos. Faça commit e push no GitHub Desktop. Não apague `.git`. GitHub Pages: branch `main`, pasta `/ (root)`, domínio personalizado vazio.
 
 
-## Política da prova anterior (v0.4)
-As fotografias das seis páginas da prova anterior foram removidas do atlas, das aulas e dos arquivos publicados. O documento serve exclusivamente de referência para questões adaptadas. Nove questões verificáveis das páginas legíveis foram incorporadas ao banco; páginas desfocadas não foram transcritas por adivinhação.
+## Atualização 0.9 — identidade e identificação do estudante
+- Paleta roxo profundo / amarelo-ouro aplicada ao painel, apostilas, flashcards e simulador de DO.
+- Tela de boas-vindas solicita nome no primeiro acesso. O nome é guardado somente em `localStorage`, sem login, banco de dados ou sincronização entre dispositivos.
+- Botão “Alterar nome” no menu lateral. O progresso anterior no mesmo navegador permanece.
+
+## Auditoria visual das imagens e esquemas
+- Confirmada a existência e leitura das seis imagens recortadas em `assets/atlas/` e das 193 páginas WebP do acervo.
+- Os recortes do linfoma folicular (H&E e IHQ), Burkitt (H&E, céu estrelado, detalhe) e linfoma agressivo foram inspecionados visualmente.
+- Atenção: `dlbcl-he.png` contém título de slide genérico “LINFOMA AGR...” e não comprova isoladamente o subtipo DLBCL; a legenda foi tornada cautelosa.
+- Os esquemas moleculares são fluxogramas didáticos resumidos, não diagramas bioquímicos exaustivos.
+- A auditoria de precisão científica de cada um dos 193 slides e a correspondência de cada imagem com cada parágrafo continuam pendentes; não interpretar esta versão como validação histopatológica completa.
+- Referência conceitual: Robbins & Cotran, *Patologia: Bases Patológicas das Doenças*; o livro não foi diretamente cotejado nesta revisão.
+
+
+## Atualização v1.0 — Atlas curado
+- Retirada a galeria automática de páginas de slides ao fim das aulas.
+- Atlas restrito a seis recortes morfológicos selecionados com legendas e perguntas interpretativas.
+- Quatro esquemas de mecanismos moleculares (RAS, BCR::ABL1, MMR e BCL2).
+- Slides originais mantidos nos arquivos do pacote para rastreabilidade, mas não são apresentados no Atlas.
+- A identificação diagnóstica das imagens é orientativa e não substitui confirmação por patologista.
